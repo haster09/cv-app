@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 .app {
   width: 100%;
@@ -18,7 +19,7 @@ body {
   width: 100px;
 }
 .container {
-  height: 82%;
+  height: 88%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,6 +29,13 @@ body {
 }
 .footer {
   height: 6%;
-  background-color: #0B0500;
+  background-color: #1D1D35;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+}
+.none {
+  display: none;
 }
