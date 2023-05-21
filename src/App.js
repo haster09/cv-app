@@ -1,6 +1,7 @@
 import './styles/app.css'
 import logo from './styles/logo.png'
 import React from 'react';
+import Start from './components/Start'
 
 class App extends React.Component {
 
@@ -12,12 +13,7 @@ class App extends React.Component {
           <div className='nav'></div>
         </div>
         <div className='container'>
-          <div className='content'>
-            <div className='start'>
-              <div className='text'>Create your <span className='cv'>Curriculum vitae</span></div>
-              <button className='startBtn'>START</button>
-            </div>
-          </div>
+          <Start className="startComponent"/>
         </div>
         <div className='footer'></div>
       </div>

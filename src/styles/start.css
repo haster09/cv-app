@@ -1,0 +1,40 @@
+.content {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start {
+  width: 1200px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-bottom: 6%;
+  font-family: 'Roboto', sans-serif;
+  cursor: default;
+}
+.text {
+  font-size: 4rem;
+}
+.cv {
+  color: #F6511D;
+  font-weight: 700;
+}
+.startBtn {
+  width: 24%;
+  height: 12%;
+  background-color: #2400A8;
+  color: white;
+  font-size: 34px;
+  border: 0;
+  border-radius: 26px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.startBtn:hover {
+  background-color: #160068;
+}
