@@ -7,11 +7,12 @@
   width: 1200px;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .none {
   display: none;
 }
-.title {
+.personalTitle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +24,7 @@
 form {
   height: 85%;
 }
-.data {
+.personalData {
   display: grid;
   height: 65%;
   grid-template-columns: 1fr 1fr;

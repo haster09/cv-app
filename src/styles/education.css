@@ -1,0 +1,22 @@
+.education {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.educationTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  color: #F6511D;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.educationData {
+  height: 85%;
+}
+.none {
+  display: none;
+}

@@ -6,9 +6,9 @@ class Personal extends React.Component {
   render() {
     return(
       <div className='personal none'>
-        <div className='title'>Personal Information</div>
+        <div className='personalTitle'>Personal Information</div>
         <form>
-          <div className='data'>
+          <div className='personalData'>
             <div className='dataElement'>
               <label for='firstName'>First Name</label>
               <input type='text' id='firstName'></input>
