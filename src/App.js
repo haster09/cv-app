@@ -9,11 +9,17 @@ class App extends React.Component {
     super();
 
     this.begin = this.begin.bind(this);
+    this.personalPrevious = this.personalPrevious.bind(this);
   }
 
   begin() {
     document.querySelector('.start').classList.add('none');
     document.querySelector('.personal').classList.remove('none');
+  }
+
+  personalPrevious() {
+    document.querySelector('.personal').classList.add('none');
+    document.querySelector('.start').classList.remove('none');
   }
 
   render() {
@@ -25,7 +31,7 @@ class App extends React.Component {
         </div>
         <div className='container'>
           <Start begin={this.begin}/>
-          <Personal />
+          <Personal previous={this.personalPrevious}/>
         </div>
         <div className='footer'>Kacper Bujak</div>
       </div>
