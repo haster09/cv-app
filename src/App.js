@@ -1,15 +1,16 @@
-import './styles/app.css'
-import logo from './styles/logo.png'
+import './styles/app.css';
+import logo from './styles/logo.png';
 import React from 'react';
-import Start from './components/Start'
+import Start from './components/Start';
 import Personal from './components/Personal';
+import Education from './components/Education';
 
 class App extends React.Component {
   constructor() {
     super();
 
     this.begin = this.begin.bind(this);
-    this.personalPrevious = this.personalPrevious.bind(this);
+    this.personalNext = this.personalNext.bind(this);
   }
 
   begin() {
@@ -17,9 +18,9 @@ class App extends React.Component {
     document.querySelector('.personal').classList.remove('none');
   }
 
-  personalPrevious() {
+  personalNext() {
     document.querySelector('.personal').classList.add('none');
-    document.querySelector('.start').classList.remove('none');
+    document.querySelector('.education').classList.remove('none');
   }
 
   render() {
@@ -31,7 +32,8 @@ class App extends React.Component {
         </div>
         <div className='container'>
           <Start begin={this.begin}/>
-          <Personal previous={this.personalPrevious}/>
+          <Personal next={this.personalNext}/>
+          <Education />
         </div>
         <div className='footer'>Kacper Bujak</div>
       </div>

@@ -35,8 +35,7 @@ class Personal extends React.Component {
             </div>
           </div>
           <div className='submit'>
-            <button onClick={this.props.previous} type='button' className='navBtn previous'>Previous</button>
-            <button type='button' className='navBtn next'>Next</button>
+            <button onClick={this.props.next} type='button' className='next'>Next</button>
           </div>
         </form>
       </div>

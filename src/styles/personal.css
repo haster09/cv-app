@@ -53,7 +53,7 @@ form {
   padding-bottom: 50px;
   gap: 200px;
 }
-.navBtn {
+.next {
   width: 300px;
   height: 70px;
   font-size: 24px;
@@ -64,6 +64,6 @@ form {
   border-radius: 20px;
   cursor: pointer;
 }
-.navBtn:hover {
+.next:hover {
   background-color: #686868;
 }
