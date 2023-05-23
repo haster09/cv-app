@@ -3,20 +3,69 @@
   width: 1200px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .educationTitle{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 15%;
-  color: #F6511D;
+  color: black;
   font-size: 3rem;
   font-weight: 700;
 }
-.educationData {
-  height: 85%;
+.eduData {
+  display: grid;
+  height: 60%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.eduDataElement {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.eduDataElement > label {
+  font-size: 28px;
+}
+.eduDataElement > input {
+  height: 70px;
+  width: 500px;
+  font-size: 24px;
+  padding: 0 10px;
+}
+.eduNext {
+  width: 300px;
+  height: 70px;
+  font-size: 24px;
+  background-color: #ff3939;
+  color: white;
+  font-weight: 700;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.eduPrevious {
+  width: 300px;
+  height: 70px;
+  font-size: 24px;
+  background-color: #a1a1a1;
+  color: white;
+  font-weight: 700;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.eduNext:hover {
+  background-color: #ff1616;
+}
+.eduPrevious:hover {
+  background-color: #8b8b8b;
 }
 .none {
   display: none;
+}
+.edu {
+  grid-column: 1 / 3;
 }

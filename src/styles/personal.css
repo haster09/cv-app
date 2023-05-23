@@ -7,7 +7,6 @@
   width: 1200px;
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 .none {
   display: none;
@@ -17,16 +16,16 @@
   align-items: center;
   justify-content: center;
   height: 15%;
-  color: #F6511D;
+  color: black;
   font-size: 3rem;
   font-weight: 700;
 }
 form {
   height: 85%;
 }
-.personalData {
+.data {
   display: grid;
-  height: 65%;
+  height: 60%;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
@@ -47,7 +46,7 @@ form {
   padding: 0 10px;
 }
 .submit {
-  height: 35%;
+  height: 40%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -58,7 +57,7 @@ form {
   width: 300px;
   height: 70px;
   font-size: 24px;
-  background-color: #999999;
+  background-color: #ff3939;
   color: white;
   font-weight: 700;
   border: 0;
@@ -66,5 +65,8 @@ form {
   cursor: pointer;
 }
 .next:hover {
-  background-color: #686868;
+  background-color: #ff1616;
+}
+.last {
+  grid-column: 1 / 3;
 }

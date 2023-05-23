@@ -8,7 +8,7 @@ class Personal extends React.Component {
       <div className='personal none'>
         <div className='personalTitle'>Personal Information</div>
         <form>
-          <div className='personalData'>
+          <div className='data'>
             <div className='dataElement'>
               <label for='firstName'>First Name</label>
               <input type='text' id='firstName'></input>
@@ -18,10 +18,6 @@ class Personal extends React.Component {
               <input type='text' id='lastName'></input>
             </div>
             <div className='dataElement'>
-              <label for='email'>Email</label>
-              <input type='email' id='email'></input>
-            </div>
-            <div className='dataElement'>
               <label for='phoneNumber'>Phone Number</label>
               <input type='tel' id='phoneNumber'></input>
             </div>
@@ -29,9 +25,9 @@ class Personal extends React.Component {
               <label for='address'>Address</label>
               <input type='text' id='address'></input>
             </div>
-            <div className='dataElement'>
-              <label for='technologies'>Technologies</label>
-              <input type='text' id='technologies'></input>
+            <div className='dataElement last'>
+              <label for='email'>Email</label>
+              <input type='email' id='email'></input>
             </div>
           </div>
           <div className='submit'>
