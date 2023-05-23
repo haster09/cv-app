@@ -1,0 +1,9 @@
+.experience {
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.none {
+  display: none;
+}

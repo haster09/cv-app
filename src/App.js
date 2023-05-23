@@ -4,6 +4,7 @@ import React from 'react';
 import Start from './components/Start';
 import Personal from './components/Personal';
 import Education from './components/Education';
+import Experience from './components/Experience';
 
 class App extends React.Component {
   constructor() {
@@ -32,7 +33,18 @@ class App extends React.Component {
 
   educationNext() {
     document.querySelector('.education').classList.add('none');
+    document.querySelector('.experience').classList.remove('none')
   }
+
+  experiencePrevious() {
+    document.querySelector('.experience').classList.add('none');
+    document.querySelector('.education').classList.remove('none');
+  }
+
+  experienceNext() {
+    document.querySelector('.experience').classList.add('none');
+  }
+
   render() {
     return (
       <div className='app'>
@@ -44,6 +56,7 @@ class App extends React.Component {
           <Start begin={this.begin}/>
           <Personal next={this.personalNext}/>
           <Education previous={this.educationPrevious} next={this.educationNext}/>
+          <Experience previous={this.experiencePrevious} next={this.experienceNext}/>
         </div>
         <div className='footer'>Kacper Bujak</div>
       </div>
