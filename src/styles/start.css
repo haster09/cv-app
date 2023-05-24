@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-self: center;
 }
 .content {
   width: 1200px;
@@ -20,7 +21,7 @@
 .text {
   font-size: 4rem;
 }
-.cv {
+.bold {
   color: #F6511D;
   font-weight: 700;
 }

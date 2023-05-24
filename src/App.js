@@ -5,15 +5,31 @@ import Start from './components/Start';
 import Personal from './components/Personal';
 import Education from './components/Education';
 import Experience from './components/Experience';
+import CV from './components/cv';
 
 class App extends React.Component {
   constructor() {
     super();
 
-    this.begin = this.begin.bind(this);
-    this.personalNext = this.personalNext.bind(this);
-    this.educationNext = this.educationNext.bind(this);
-    this.educationPrevious = this.educationPrevious.bind(this);
+    this.state = {
+      personal: "",
+      education: "",
+      experience: "",
+    }
+  }
+
+
+
+  getPersonal = (personal) => {
+    this.setState({personal: personal});
+  }
+
+  getEducation = (education) => {
+    this.setState({education: education});
+  }
+
+  getExperience = (experience) => {
+    this.setState({experience: experience});
   }
 
   begin() {
@@ -43,7 +59,9 @@ class App extends React.Component {
 
   experienceNext() {
     document.querySelector('.experience').classList.add('none');
+    document.querySelector('.cv').classList.remove('none');
   }
+
 
   render() {
     return (
@@ -54,9 +72,10 @@ class App extends React.Component {
         </div>
         <div className='container'>
           <Start begin={this.begin}/>
-          <Personal next={this.personalNext}/>
-          <Education previous={this.educationPrevious} next={this.educationNext}/>
-          <Experience previous={this.experiencePrevious} next={this.experienceNext}/>
+          <Personal onSubmit={this.getPersonal} next={this.personalNext}/>
+          <Education onSubmit={this.getEducation} previous={this.educationPrevious} next={this.educationNext}/>
+          <Experience onSubmit={this.getExperience} previous={this.experiencePrevious} next={this.experienceNext}/>
+          <CV data={this.state}/>
         </div>
         <div className='footer'>Kacper Bujak</div>
       </div>

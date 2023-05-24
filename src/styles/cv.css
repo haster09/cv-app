@@ -1,0 +1,14 @@
+.cv {
+  width: 60vw;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr 1fr;
+}
+.none {
+  display: none;
+}
+.cvPersonal {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}

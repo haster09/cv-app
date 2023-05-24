@@ -2,28 +2,42 @@ import React from 'react'
 import '../styles/personal.css'
 
 class Personal extends React.Component {
+  
+  handleSubmit = (e) => {
+    e.preventDefault();
+    const values = {
+      firstName: e.target.firstName.value,
+      lastName: e.target.lastName.value,
+      phoneNumber: e.target.phoneNumber.value,
+      country: e.target.country.value,
+      address: e.target.address.value,
+      email: e.target.email.value
+    }
+    this.props.onSubmit(values);
+  }
+
 
   render() {
-    return(
+    return (
       <div className='personal none'>
         <div className='title'>Personal Information</div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <div className='data'>
             <div className='dataElement'>
-              <label for='firstName'>First Name</label>
+              <label htmlFor='firstName'>First Name</label>
               <input placeholder='e.g. John' type='text' id='firstName'></input>
             </div>
             <div className='dataElement'>
-              <label for='lastName'>Last Name</label>
+              <label htmlFor='lastName'>Last Name</label>
               <input placeholder='e.g. Doe' type='text' id='lastName'></input>
             </div>
             <div className='dataElement'>
-              <label for='phoneNumber'>Phone Number</label>
+              <label htmlFor='phoneNumber'>Phone Number</label>
               <input placeholder='e.g. 123-456-789' type='tel' id='phoneNumber'></input>
             </div>
             <div className='dataElement'>
-              <label for='country'>Country</label>
-              <select id="country">
+              <label htmlFor='country'>Country</label>
+              <select defaultValue={'Poland'} name='country' id="country">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -271,16 +285,16 @@ class Personal extends React.Component {
             </select>
             </div>
             <div className='dataElement'>
-              <label for='address'>Address</label>
+              <label htmlFor='address'>Address</label>
               <input placeholder='e.g. Nasutów 213' type='text' id='address'></input>
             </div>
             <div className='dataElement'>
-              <label for='email'>Email</label>
+              <label htmlFor='email'>Email</label>
               <input placeholder='e.g. example@xyz.com' type='email' id='email'></input>
             </div>
           </div>
           <div className='submit'>
-            <button onClick={this.props.next} type='button' className='next'>Next</button>
+            <button onClick={this.props.next} type='submit' className='next'>Next</button>
           </div>
         </form>
       </div>

@@ -24,11 +24,11 @@ body {
   width: 100px;
 }
 .container {
-  height: 88%;
-  display: flex;
-  justify-content: center;
+  min-height: 88%;
+  display: grid;
   align-items: center;
   flex-direction: column;
+  justify-content: center;
   overflow-x: hidden;
   background-color: #ffffff;
 }
